@@ -1,0 +1,24 @@
+
+
+.logo {
+  text-align: center;
+  padding: 30px;
+  background: #ffffff;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+
+.bg-left { 
+  background-image: url('../img/landing-bg-left.jpg');
+  background-repeat: no-repeat;
+  height: 100%;;
+}
+.bg-right { 
+  background-image: url('../img/landing-bg-right.jpg');
+  background-repeat: no-repeat;
+  height: 100%;
+}
