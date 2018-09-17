@@ -1,0 +1,42 @@
+@import "clear-sans";
+
+$fonts: $fontFamily-sans $fontFamily-serif $fontFamily-mono $fontFamily-headings $fontFamily-hero;
+
+@if contains($fonts, "'Clear Sans', sans-serif") {
+    @include clear-sans;
+}
+
+@font-face {
+    font-family: 'Centennial-ItalicOsF';
+    src: url('../fonts/Centennial-ItalicOsF.eot?#iefix') format('embedded-opentype'),  url('../fonts/Centennial-ItalicOsF.otf')  format('opentype'),
+           url('../fonts/Centennial-ItalicOsF.woff') format('woff'), url('../fonts/Centennial-ItalicOsF.ttf')  format('truetype'), url('../fonts/Centennial-ItalicOsF.svg#Centennial-ItalicOsF') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Centennial-Roman';
+    src: url('../fonts/Centennial-Roman.eot?#iefix') format('embedded-opentype'),  url('../fonts/Centennial-Roman.woff') format('woff'), url('../fonts/Centennial-Roman.ttf')  format('truetype'), url('../fonts/Centennial-Roman.svg#Centennial-Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'CentennialLTStd-Roman';
+    src: url('../fonts/CentennialLTStd-Roman.eot?#iefix') format('embedded-opentype'),  url('../fonts/CentennialLTStd-Roman.otf')  format('opentype'),
+           url('../fonts/CentennialLTStd-Roman.woff') format('woff'), url('../fonts/CentennialLTStd-Roman.ttf')  format('truetype'), url('../fonts/CentennialLTStd-Roman.svg#CentennialLTStd-Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'CentennialLTStd-Bold';
+    src: url('../fonts/CentennialLTStd-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/CentennialLTStd-Bold.otf')  format('opentype'),
+           url('../fonts/CentennialLTStd-Bold.woff') format('woff'), url('../fonts/CentennialLTStd-Bold.ttf')  format('truetype'), url('../fonts/CentennialLTStd-Bold.svg#CentennialLTStd-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'CentennialLTStd-BoldItalic';
+    src: url('../fonts/CentennialLTStd-BoldItalic.eot?#iefix') format('embedded-opentype'),  url('../fonts/CentennialLTStd-BoldItalic.otf')  format('opentype'),
+           url('../fonts/CentennialLTStd-BoldItalic.woff') format('woff'), url('../fonts/CentennialLTStd-BoldItalic.ttf')  format('truetype'), url('../fonts/CentennialLTStd-BoldItalic.svg#CentennialLTStd-BoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
