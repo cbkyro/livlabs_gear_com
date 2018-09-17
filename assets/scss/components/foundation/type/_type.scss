@@ -36,9 +36,16 @@ cite {
 }
 
 .page-heading {
-    margin: 0 0 spacing("double");
+    margin: 0 0 spacing("half");
     text-align: center;
     font-size: 50px; //to match client website
+}
+.category-desc {
+    color: $carousel-description-color;
+    font-size: fontSize("large");
+    font-family: "Centennial-ItalicOsF";
+    text-align: center;
+    margin: 0 0 spacing("double");
 }
 
 h1 {

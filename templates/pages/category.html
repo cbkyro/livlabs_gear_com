@@ -16,12 +16,9 @@ category:
 
 {{#partial "page"}}
 
-{{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
-{{#if category.image}}
-    <img class="lazyload" data-sizes="auto" src="{{cdn 'img/loading.svg'}}" data-src="{{getImage category.image 'zoom_size'}}">
-{{/if}}
-<h1 class="page-heading">{{category.name}}</h1>
-{{{category.description}}}
+{{ components/common/breadcrumbs breadcrumbs=breadcrumbs}}
+<!-- origincal category.image -->
+
 {{{snippet 'categories'}}}
 <div class="page">
     {{#if category.faceted_search_enabled}}

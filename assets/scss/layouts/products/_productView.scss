@@ -54,13 +54,13 @@
         clear: right;
         float: right;
         width: grid-calc(6, $total-columns);
+        font-size: 1.25rem;;
     }
 
     .productView-title {
         border-bottom: container("border");
         margin-bottom: spacing("base");
         padding-left: spacing("base");
-        padding-right: spacing("base");
     }
 
     .productView-description {
