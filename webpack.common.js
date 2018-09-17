@@ -45,10 +45,10 @@ module.exports = {
         path: path.resolve(__dirname, 'assets/dist'),
     },
     plugins: [
-        new CleanPlugin(['assets/dist'], {
-            verbose: false,
-            watch: false,
-        }),
+        // new CleanPlugin(['assets/dist'], {
+        //     verbose: false,
+        //     watch: false,
+        // }),
         new LodashPlugin, // Complements babel-plugin-lodash by shrinking its cherry-picked builds further.
         new webpack.ProvidePlugin({
             $: 'jquery',
