@@ -124,6 +124,8 @@
         transform: translateY(-50%);
         width: remCalc(700px);
         transition: all ease 0.5s;
+            -webkit-transition: all ease 0.5s;
+            -moz-transition: all ease 0.5s;
 
         &.heroCarousel-content--empty {
             background-color: transparent;

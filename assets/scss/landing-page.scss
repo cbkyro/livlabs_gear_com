@@ -1,4 +1,9 @@
-
+header, footer { display: none; }
+.container { 
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
 
 .logo {
   text-align: center;
@@ -14,11 +19,24 @@
 
 .bg-left { 
   float: left;
-  background-image: url('../img/landing-bg-left.jpg');
+  // background-image: url('../img/landing-bg-left.jpg');
   background-repeat: no-repeat;
   height: 100%;;
   padding: 0;
+
+  .heroCarousel-content { 
+    text-align: left;
+    left: 0;
+    width: 100%;
+
+   .product {
+     position: absolute;
+     top: 0;
+     right: 0;
+   }
+  }
 }
+
 .heroCarousel-title {
   font-size: 67px;
   font-family: "Poppins";
@@ -26,13 +44,22 @@
   line-height: 1;
 }
 
-
-
-
 .bg-right { 
   float: right;
-  background-image: url('../img/landing-bg-right.jpg');
+  // background-image: url('../img/landing-bg-right.jpg');
   background-repeat: no-repeat;
   height: 100%;
   padding: 0;
+
+  .heroCarousel-content { 
+    text-align: right;
+    right: 0;
+    width: 100%;
+
+    .product {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
 }
