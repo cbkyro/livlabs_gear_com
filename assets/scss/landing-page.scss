@@ -27,16 +27,19 @@ body { margin-top: -4.5rem; }
   background-image: url('https://cdn7.bigcommerce.com/s-sox5h1cuho/stencil/133bfe20-9c6d-0136-1c2d-6f1a872579d0/img/landing-bg-left.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-clip: content-box;
   height: 80vh;
   padding: 15px;
 
   .heroCarousel-content { 
     text-align: left;
     left: 0;
+    margin: 0;
+    float: left;
     // width: 100%;
     // top: 30%;
-
-   .product {
+  }
+  .product {
     //  position: absolute;
     //  top: 0;
     //  right: 0;
@@ -44,7 +47,6 @@ body { margin-top: -4.5rem; }
     top: 50%;
     transform: translateY(-50%);
    }
-  }
 }
 
 .heroCarousel-title {
@@ -60,12 +62,15 @@ body { margin-top: -4.5rem; }
   background-image: url('https://cdn7.bigcommerce.com/s-sox5h1cuho/stencil/133bfe20-9c6d-0136-1c2d-6f1a872579d0/img/landing-bg-right.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-clip: content-box;
   height: 80vh;
   padding: 15px;
 
   .heroCarousel-content { 
     text-align: right;
     right: 0;
+    margin: 0;
+    float: right;
     // width: 100%;
     // top: 30%;
 
@@ -73,14 +78,13 @@ body { margin-top: -4.5rem; }
       background: #fba919;
       border: #fba919;
     }
-
-    .product {
-      // position: absolute;
-      // top: 0;
-      // left: 0;
-      float: left;
-      top: 50%;
-      transform: translateY(-50%);
-    }
+  }
+  .product {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    float: left;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
