@@ -11,10 +11,12 @@ body { margin-top: -4.5rem; }
 .logo {
   text-align: center;
   padding: 30px;
-  background: #ffffff;
+  background: url('https://cdn7.bigcommerce.com/s-sox5h1cuho/product_images/uploaded_images/landing-page-header-bg.png?t=1537327705');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   margin: 0 auto;
-  position: absolute;
-  top: 0;
+  position: relative;
   left: 50%;
   z-index: 1;
   transform: translateX(-50%);
@@ -22,21 +24,25 @@ body { margin-top: -4.5rem; }
 
 .bg-left { 
   float: left;
-  // background-image: url('../img/landing-bg-left.jpg');
+  background-image: url('https://cdn7.bigcommerce.com/s-sox5h1cuho/stencil/133bfe20-9c6d-0136-1c2d-6f1a872579d0/img/landing-bg-left.jpg');
   background-repeat: no-repeat;
-  height: 100%;;
-  padding: 0;
+  background-size: cover;
+  height: 80vh;
+  padding: 15px;
 
   .heroCarousel-content { 
     text-align: left;
     left: 0;
-    width: 100%;
-    top: 30%;
+    // width: 100%;
+    // top: 30%;
 
    .product {
-     position: absolute;
-     top: 0;
-     right: 0;
+    //  position: absolute;
+    //  top: 0;
+    //  right: 0;
+    float: left;
+    top: 50%;
+    transform: translateY(-50%);
    }
   }
 }
@@ -51,21 +57,30 @@ body { margin-top: -4.5rem; }
 
 .bg-right { 
   float: right;
-  // background-image: url('../img/landing-bg-right.jpg');
+  background-image: url('https://cdn7.bigcommerce.com/s-sox5h1cuho/stencil/133bfe20-9c6d-0136-1c2d-6f1a872579d0/img/landing-bg-right.jpg');
   background-repeat: no-repeat;
-  height: 100%;
-  padding: 0;
+  background-size: cover;
+  height: 80vh;
+  padding: 15px;
 
   .heroCarousel-content { 
     text-align: right;
     right: 0;
-    width: 100%;
-    top: 30%;
+    // width: 100%;
+    // top: 30%;
+
+    .heroCarousel-action {
+      background: #fba919;
+      border: #fba919;
+    }
 
     .product {
-      position: absolute;
-      top: 0;
-      left: 0;
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      float: left;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 }
