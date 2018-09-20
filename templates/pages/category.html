@@ -16,9 +16,10 @@ category:
 
 {{#partial "page"}}
 
-{{ components/common/breadcrumbs breadcrumbs=breadcrumbs}}
 <!-- origincal category.image -->
-
+<h1 class="page-heading">{{category.name}}</h1>
+{{{category.description}}}
+{{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
 {{{snippet 'categories'}}}
 <div class="page">
     {{#if category.faceted_search_enabled}}

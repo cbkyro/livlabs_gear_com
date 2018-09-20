@@ -1,35 +1,16 @@
 <div class="body">
     {{#block "hero"}} {{/block}}
     {{#if category.image}}
-        <!-- <img class="lazyload category-image" data-sizes="auto" src="{{cdn 'img/loading.svg'}}" data-src="{{getImage category.image 'zoom_size'}}"> -->
-
-        <section class="heroCarousel slick-initialized slick-slider slick-dotted" data-slick="{
-            &quot;mobileFirst&quot;: true,
-            &quot;slidesToShow&quot;: 1,
-            &quot;slidesToScroll&quot;: 1,
-            &quot;autoplay&quot;: true,
-            &quot;autoplaySpeed&quot;: 5000,
-            &quot;lazyLoad&quot;: &quot;anticipated&quot;
-        }">
-        <div class="heroCarousel-slide {{#if ../theme_settings.homepage_stretch_carousel_images}}stretch{{/if}} {{#if @first}}heroCarousel-slide--first{{/if}}">
-            <div class="heroCarousel-image-wrapper" {{#if image_height}}{{#if image_width}}style="height: {{multiply (divide image_height image_width) 100}}vw"{{/if}}{{/if}}>
-                <img class="lazyload category-image heroCarousel-image" data-sizes="auto" src="{{cdn 'img/loading.svg'}}" data-src="{{getImage category.image 'zoom_size'}}">
-                {{#if image_width}}width="{{image_width}}"{{/if}} {{#if image_height}}height="{{image_height}}"{{/if}} />
-            </div>
-            <div class="heroCarousel-content">
-                <h1 class="heroCarousel-title">{{category.name}}</h1>
-                <div class="heroCarousel-description">{{{category.description}}}</div>
-                    <!-- <span class="heroCarousel-action button button--primary button--large">SHOP NOW <img src="/stencil/00000000-0000-0000-0000-000000000001//img/button-icon.png" alt=""></span> -->
-            </div>
-        </div>
-        
-    </section>
-    {{else}}
-    <h1 class="page-heading">{{category.name}}</h1>
-    <div class="category-desc">{{{category.description}}}</div>
+        <img class="lazyload category-image" data-sizes="auto" src="{{cdn 'img/loading.svg'}}" data-src="{{getImage category.image 'zoom_size'}}">
     {{/if}}
+
+    {{#if page_type '===' 'default'}}
+        {{> components/custom/home-blocks}}
+    {{/if}}
+
     <div class="container">
         {{#block "page"}} {{/block}}
     </div>
     {{> components/common/modal}}
 </div>
+

@@ -1,0 +1,74 @@
+// 100% to counter Bootstrap styles and match grid.scss
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: table;
+}
+.main.full {
+    // float: left;
+    max-width: 100%;
+}
+// .productCarousel {
+//     max-width: 98%;
+//     margin: 0 auto;
+// }
+.slick-prev { left: 0; }
+.slick-next { right: 0; }
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+.productGrid .card { border: 0; }
+.modal { left: 50%; bottom: auto; }
+#home-blocks {
+    padding-left: 0px;
+    padding-right: 0px;
+    display: table;
+    margin-bottom: 30px;
+    
+    .row.spacing-0 {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    img { width: 100%; }
+    .gallery-image__item {
+        position: relative;
+        display: block;
+        color: #fff;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .left {
+        padding-left: 0px;
+        padding-right: 0px;
+        float: left;
+
+        .row {
+            width: 100%;
+            
+            div {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
+    }
+    .right {
+        padding-left: 0px;
+        padding-right: 0px;
+        float: left;
+
+        .row {
+            width: 100%;
+            
+            div {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
+    }
+}
+
