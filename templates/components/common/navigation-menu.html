@@ -14,8 +14,11 @@
             </li>
         {{/each}}
         <li class="navPages-item navPages-item-page">
-            <a class="navPages-action" href="#">Tools</a>
+            <a id="switchStore" class="navPages-action" data-toggle="modal" data-target="#exampleModalCenter">Tools</a>
         </li>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            Launch demo modal
+        </button>
         {{#unless theme_settings.hide_content_navigation}}
             {{#each pages}}
                  <li class="navPages-item navPages-item-page">

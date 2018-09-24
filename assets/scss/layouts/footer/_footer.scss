@@ -192,3 +192,13 @@
 .footer-newsletter-summary {
     text-align: left;
 }
+
+
+// Modal styles.
+#exampleModalCenter { 
+
+    .show {
+        display: block !important;
+        visibility: visible !important;
+    }
+}
