@@ -64,19 +64,26 @@
               </button>
             </div>
             <div class="modal-body">
-              <!-- <img src="https://cdn7.bigcommerce.com/s-sox5h1cuho/product_images/uploaded_images/shop-gear.jpg?t=1537851211"> -->
+              <p>Redirecting to https://www.livlabstools.com</p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-              <a href="http://livlabstools.com" class="btn btn-primary">Take me there!</a>
+              <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button> -->
+              <span class="heroCarousel-action button button--primary button--large">Shop Tools <img src="/stencil/00000000-0000-0000-0000-000000000001//img/button-icon.png" alt=""></span>
+              <!-- <a href="http://livlabstools.com" class="btn btn-primary">Take me there!</a> -->
             </div>
           </div>
         </div>
       </div>
 
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      {{{stylesheet '/assets/css/bootstap.modal.css'}}}
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+      <script type="text/javascript">
+        $('#switchStore').on('click', function(ev) {
+          $('#exampleModalCenter').modal('toggle');
+        }); 
+      </script>
 
         {{{footer.scripts}}}
         {{{snippet 'footer'}}}
