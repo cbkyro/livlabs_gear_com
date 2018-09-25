@@ -22,7 +22,7 @@
     margin-bottom: 0;
 }
 .productGrid .card { border: 0; }
-.modal { left: 50%; bottom: auto; }
+.modal { left: 50%; bottom: auto; transform: translate(-50%, -50%); }
 #home-blocks {
     padding-left: 0px;
     padding-right: 0px;
