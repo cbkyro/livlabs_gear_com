@@ -1,3 +1,26 @@
+// My Modal styles
+#exampleModalCenter { 
+  background: transparent;
+  // transform: translate(0, -50%);
+  width: 100%;
+  height: 100%;
+
+  &.show {
+      visibility: visible !important;
+  }
+  .modal-title { text-transform: none; width: 100%; text-align: center; }
+  .modal-body { text-align: center; font-style: italic; }
+  .modal-dialog { max-width: 900px; }
+
+  a.btn { color: #ffffff; }
+
+  .modal-footer {
+      text-align: center;
+      display: block;
+  }
+}
+.modal { height: 100% ;} /* Keeps height on Cornerstone quick view modal */
+
 // Bootstrap 4
 
   .close {
